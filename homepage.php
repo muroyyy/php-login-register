@@ -16,6 +16,7 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <div class="container home-box">
+        <div class="avatar">&#128100;</div> <!-- 👤 Unicode avatar -->
         <h2>Welcome, <?= htmlspecialchars($_SESSION['user']) ?>!</h2>
         <form method="post" action="logout.php">
             <button type="submit" name="logout" class="btn btn-success mt-3">Sign Out</button>
