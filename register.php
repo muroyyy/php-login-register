@@ -1,6 +1,8 @@
 <?php
 require 'config.php';
 
+$success = false;
+
 if (isset($_POST['register'])) {
     $username = trim($_POST['username']);
     $email    = trim($_POST['email']);
@@ -13,8 +15,7 @@ if (isset($_POST['register'])) {
     } else {
         $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
         $stmt->execute([$username, $email, $password]);
-        header("Location: login.php");
-        exit;
+        $success = true;
     }
 }
 ?>
@@ -34,5 +35,12 @@ if (isset($_POST['register'])) {
         <p>Already have an account? <a href="login.php">Login</a></p>
         <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
     </form>
+
+    <?php if ($success): ?>
+    <script>
+        alert("Registration successful! You can now log in.");
+        window.location.href = "login.php";
+    </script>
+    <?php endif; ?>
 </body>
 </html>
