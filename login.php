@@ -25,13 +25,17 @@ if (isset($_POST['login'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post">
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <button type="submit" name="login">Login</button>
-        <p>Don't have an account? <a href="register.php">Register</a></p>
-        <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
-    </form>
+    <div class="container mt-5">
+        <div class="form-box">
+            <h2 class="text-center">Login</h2>
+            <form method="post">
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit" name="login" class="btn btn-success">Login</button>
+                <p class="mt-3 text-center">Don't have an account? <a href="register.php">Register</a></p>
+                <?php if (isset($error)) echo "<p class='error text-danger'>$error</p>"; ?>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

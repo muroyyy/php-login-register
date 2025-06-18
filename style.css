@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    height: 100vh;
 }
 
 /* Form container */
@@ -21,6 +21,18 @@ form:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
+
+.form-box {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+}
+
 
 /* Inputs */
 input {
