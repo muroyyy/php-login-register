@@ -2,7 +2,7 @@
 $host = '127.0.0.1';
 $db   = 'php_auth_db';
 $user = 'root';
-$pass = 'amirulpass123!'; // use your DB password
+$pass = 'r00tpa55!'; // use your DB password
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
