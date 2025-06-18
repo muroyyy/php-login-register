@@ -92,3 +92,15 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
+
+/* Homepage welcome box */
+.home-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
