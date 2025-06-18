@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
+$host = '127.0.0.1';
 $db   = 'php_auth_db';
 $user = 'root';
 $pass = 'amirulpass123!'; // use your DB password
